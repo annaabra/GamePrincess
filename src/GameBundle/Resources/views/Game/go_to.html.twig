@@ -1,0 +1,16 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}GameBundle:Game:goTo{% endblock %}
+
+{% block body %}
+{{title}}
+    <ul>
+    {{description}}
+{% for link in links %}
+        <li>
+            <a href={{ link.locationId }}>{{ link.name }}</a>
+        </li>
+{% endfor %}
+    </ul>
+
+{% endblock %}
