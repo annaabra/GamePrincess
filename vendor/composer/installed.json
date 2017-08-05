@@ -2277,12 +2277,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-            "reference": "3aff53eedf9b1c2cdf2d69b160cd0b5ee195dffa"
+            "reference": "d325bb654ee60bc6e866676e1e159b475c147596"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/3aff53eedf9b1c2cdf2d69b160cd0b5ee195dffa",
-            "reference": "3aff53eedf9b1c2cdf2d69b160cd0b5ee195dffa",
+            "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/d325bb654ee60bc6e866676e1e159b475c147596",
+            "reference": "d325bb654ee60bc6e866676e1e159b475c147596",
             "shasum": ""
         },
         "require": {
@@ -2309,7 +2309,7 @@
             "symfony/validator": "^2.7 || ^3.0",
             "symfony/yaml": "^2.7 || ^3.0"
         },
-        "time": "2017-07-28 16:47:18",
+        "time": "2017-08-04 11:55:10",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {

@@ -1,16 +1,120 @@
-{% extends "::base.html.twig" %}
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Princess Game</title>
+<style>
+	#container
+	{
+	    width: 1000px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	#logo
+	{
+	    background-color: black;
+	    color: white;
+	    text-align: center;
+	    padding: 15px;
+	}
+	#nav
+	{
+	    float: left;
+	    background-color: lightgray;
+	    width: 120px;
+	    min-height: 620px;
+	    padding: 10px;
+	}
+	#content
+	{
+	    float: left;
+	    padding: 19px;
+	    /*border-style: solid;
+	border-width: 1px;*/
+	    width: 640px;
+	}
+	#ad
+	{
+	    float: left;
+	    width: 160px;
+	    min-height: 620px;
+	    padding: 10px;
+	    background-color: lightgray;
+	}
+	#footer
+	{
+	    clear: both;
+	    background-color: black;
+	    color: white;
+	    text-align: center;
+	    padding: 20px;
+	}
+	#descripton {
+	    margin-top: 20px;
+	    width: 400px;
+	    background-color: #DDDD00;
+	    min-height: 378px;
+	    /*border-style: solid;
+	    border-width: 1px;*/
+	    margin: auto;
+		padding: 20px;
 
-{% block title %}GameBundle:Game:goTo{% endblock %}
+	}
+	.button{
+	width: 200px;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 20px;
+	text-align: center;
+	color: black;
+	padding: 20px;
+	margin: 30px auto 0px auto;
+	background-color: lightgray;
+	display: block;
+	cursor:pointer;
+	}
+a{
+	text-decoration: none;
+	color: black;
+}
+</style>
+</head>
 
+<body>
 {% block body %}
-{{title}}
-    <ul>
-    {{description}}
-{% for link in links %}
-        <li>
-            <a href={{ link.locationId }}>{{ link.name }}</a>
-        </li>
-{% endfor %}
-    </ul>
+	<div id="container">
 
+		<div id="logo">
+			<h1>{{title}}</h1>
+		</div>
+
+		<div id="nav">
+
+		</div>
+
+		<div id="content">
+			<div id="descripton">
+                {{description}}
+			</div>
+{% for link in links %}
+			<div class="button">
+				<a href={{ link.locationId }}>{{ link.name }}</a>
+			</div>
+
+{% endfor %}
+
+		</div>
+
+		<div id="ad">
+
+		</div>
+
+
+		<div id="footer">
+
+		</div>
+
+	</div>
 {% endblock %}
+</body>
+</html>
