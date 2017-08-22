@@ -17,9 +17,7 @@ class GameController extends Controller
         $location = $repository->find($id);
         $links = $location->getLinks();
         $description = $repository->find($id);
-        return $this->render('GameBundle:Game:go_to.html.twig',
-        ["title"=>$location->getLocationName(),"description"=>$description->getDescription(),
-        "links"=>$links]);
+        return $this->render('GameBundle:Game:go_to.html.twig',    ["title"=>$location->getLocationName(),"description"=>$description->getDescription(),"links"=>$links]);
     }
 
 }
